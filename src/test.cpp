@@ -211,6 +211,7 @@ void test_matrix_operations_chain() {
     Matrix A = create_matrix(2, 2);
     Matrix B = create_matrix(2, 2);
     
+    
     A.data[0][0] = 1; A.data[0][1] = 2;
     A.data[1][0] = 3; A.data[1][1] = 4;
     
