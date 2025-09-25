@@ -4,10 +4,10 @@
 #include <stdexcept>
 
 typedef struct {
-    double** data;
-    int rows;
-    int cols;
-} Matrix;
+    double** data; // pointer to data
+    int rows; // property 1
+    int cols; // property 2
+} Matrix; // struct name
 
 Matrix create_matrix(int rows, int cols);
 
@@ -24,3 +24,6 @@ Matrix matrix_from_array(double* data, int rows, int cols);
 bool matrix_is_symmetric(Matrix m, double tolerance);
 
 #endif
+
+
+// #ifndef  .... #endif : if not defined - define structure. Avoiding errors while compiling.
